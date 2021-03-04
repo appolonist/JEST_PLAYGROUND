@@ -1,0 +1,42 @@
+{
+  "name": "jest_playground",
+  "version": "1.0.0",
+  "description": "tests playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "jest_playground"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Karol Piotrowski",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.13.9",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  },
+  "jest": {
+    "clearMocks": true,
+    "rootDir": "src"
+  },
+  "babel": {
+      "presets": [
+        [
+          "@babel/env",
+          {
+            "targets": {
+              "browsers": [
+                "last 2 versions"
+              ]
+            },
+            "useBuiltIns": "usage"
+          }
+        ]
+      ]
+    }
+}
