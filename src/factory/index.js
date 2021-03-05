@@ -1,6 +1,6 @@
 import { createProfiler } from './factory.js'
 
-function getAllFactors (intNumber) {
+export function getAllFactors (intNumber) {
   const profiler = createProfiler(
     `Finding all factors of ${intNumber}`)
 

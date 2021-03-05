@@ -20,7 +20,7 @@ class Profiler {
     end () {}
   }
   
-  export default function createProfiler (label) {
+  export function createProfiler (label) {
     if (process.env.NODE_ENV === 'production') {
       return noopProfiler
     }
