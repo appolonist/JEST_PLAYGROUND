@@ -4,7 +4,7 @@
   "description": "tests playground",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,9 @@
   },
   "jest": {
     "clearMocks": true,
-    "rootDir": "src"
+    "rootDir": "src",
+    "testEnvironment": "jest-environment-node",
+    "transform": {}
   },
   "babel": {
       "presets": [
